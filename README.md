@@ -1,2 +1,3 @@
-# Maya_Python_MEL_Scripts
-Shorthand MEL and Python scripts to make Maya programming easier
+# MayaScripts
+
+All of the Python Scripts for Maya I make will be located in here

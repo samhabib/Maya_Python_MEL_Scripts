@@ -1,0 +1,131 @@
+cmds.instance( O , name = A )
+
+O = Object you wish to instance (Make a copy of ), changes to an instance wont affect the original object but changes to the original will affect all of its instanced children
+
+A = What you wish to name your instance
+
+Ex. instanceResult = cmds.instance(transformName, name = transformName + '_instance#') 
+
+The # will automaticially number your instances for you when used in the name flag
+
+http://download.autodesk.com/us/maya/2010help/Commands/instance.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.group( empty = A, name = B, parent = C )
+
+A = If True, it will create an empty group with no objects in t
+
+B = What you wish to name your group
+
+C = What parent you want to put the new group under
+
+http://download.autodesk.com/us/maya/2009help/CommandsPython/group.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.ls( ... )
+
+If parenthesis is blank it selects all objects. There are a bunch of ways to narrow its search you can find a lot of them here
+
+http://download.autodesk.com/us/maya/2011help/Commands/ls.html
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.polySphere( r = A, name = B )
+
+A = What you wish the radius for your new sphere to be
+
+B = What you wish to name your sphere
+
+http://help.autodesk.com/cloudhelp/2015/CHS/Maya-Tech-Docs/Commands/polySphere.html
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.hide( O, all = A, rh = B )
+
+O = Objects you wish to hide
+
+A = if True, hides all objects
+
+B = if True, will still hide objects but it will also return a list of the hidden objects
+
+http://download.autodesk.com/us/maya/2010help/Commands/hide.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.move( X, Y, Z, O )
+
+X = Where you want to Move the X-coordinate of object O to
+
+Y = Where you want to Move the Y-coordinate of object O to
+
+Z = Where you want to Move the Z-coordinate of object O to
+
+O = The object you wish to move to the desired location
+
+http://download.autodesk.com/us/maya/2010help/Commands/move.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+cmds.rotate( X, Y, Z, O )
+
+X = What degree you wish to rotate your X attribute of object O
+
+Y = What degree you wish to rotate your Y attribute of object O
+
+Z = What degree you wish to rotate your Z attribute of object O
+
+O = The object you wish to rotate 
+
+http://download.autodesk.com/us/maya/2010help/Commands/rotate.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+cmds.scale( X, Y, Z, O )
+
+X = How much you want to scale the X scale of object O
+
+Y = How much you want to scale the Y scale of object O
+
+Z = How much you want to scale the Z scale of object O
+
+O = The object you wish to scale
+
+http://download.autodesk.com/us/maya/2010help/Commands/scale.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+cmds.xform( O, cp = A, ro x y z ) 
+
+O = The object you wish to edit
+
+A = If True, will set the the pivot points to the center of the bounding box
+
+x y z = The x, y, and z coordinates you wish to rotate with xform
+
+xform can be used to set any element in a transformation node including rotate, scale, move, centerPivots, etc...
+
+http://download.autodesk.com/us/maya/2010help/Commands/xform.html
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+cmds.separator(h = A, style = B)
+
+A = The height of the seprator in your window
+
+B = Choose a different style for how you want the seprator to look 'none' is an example of one
+
+Separators are used for filling in gaps in your custom UI windows because UI windows work in a grid system one at a time so you can use separators to make gaps and make your window more organized
+
+http://help.autodesk.com/cloudhelp/2016/JPN/Maya-Tech-Docs/Commands/separator.html 
+
+^only japanese link for some reason
+
+
+--------------------------------------------------------------------------------------------------------------------------------
